@@ -1,0 +1,16 @@
+* {
+  font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  padding: 0px 250px;
+}
+
+.header,
+.features,
+.testimony,
+.footer {
+  height: 600px;
+  background-color: aquamarine;
+  border: 10px solid red;
+}
