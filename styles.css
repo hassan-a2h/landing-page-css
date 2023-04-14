@@ -86,8 +86,11 @@
 .header .sign-up {
   color: white;
   background-color: #3882F6;
-  border-radius: 4px 8px;
+  border: none;
+  font-size: 18px;
+  border-radius: 16px;
   padding: 16px 64px;
+  margin-top: 16px;
   font-weight: 900;
 }
 
