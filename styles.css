@@ -36,7 +36,9 @@
   padding: 0px;
 }
 
-.header .logo {
+.header .logo,
+.footer > .card > .text > .title,
+.copyright {
   font-size: 24px;
   font-weight: 900;
 }
@@ -52,7 +54,8 @@
 }
 
 .header > .navbar ul a,
-.header > .info .sub-text {
+.header > .info .sub-text,
+.footer > .card .sub-text {
   font-size: 18px;
   font-weight: 400;
   color: #E5E7EB;
@@ -152,5 +155,51 @@
   justify-content: flex-end;
   font-size: 24px;
   font-weight: 700;
+  margin-top: 32px;
   color: #1F2937;
+}
+
+
+/* Styles for footer and copyright section */
+.footer {
+  height: 450px;
+}
+
+.footer,
+.footer > .card {
+  display: flex;
+  align-items: center;
+}
+
+.copyright {
+  height: 150px;
+  color: #F9FAF8;
+  background-color: #1F2937;
+}
+
+.footer > .card {
+  height: 200px;
+  flex: 1 1 0;
+  color: #F9FAF8;
+  background-color: #3882F6;
+  border-radius: 16px;
+  justify-content: center;
+  gap: 200px;
+}
+
+.footer .sign-up {
+  border: 2px solid #F9FAF8;
+  border-radius: 12px;
+  padding: 12px 36px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Styles for Copyright section */
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Font size declared at .header .logo */
+  font-weight: 300;
 }
