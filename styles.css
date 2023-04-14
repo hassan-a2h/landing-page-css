@@ -1,9 +1,7 @@
+/* Set font family for entire page */
 * {
   font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-body {
-  padding: 0px 250px;
+  margin: 0px;
 }
 
 .header,
@@ -11,6 +9,124 @@ body {
 .testimony,
 .footer {
   height: 600px;
-  background-color: aquamarine;
-  border: 10px solid red;
+  padding: 0px 250px;
+}
+
+/* Background Colors of major divs */
+.header {
+  background-color: #1F2937;
+  color: #F9FAF8;
+}
+
+.testimony {
+  background-color: #E5E7EB;
+}
+
+/* Styles for elements inside header */
+.header > .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .right-links ul {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0px;
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.info .text > .title {
+  color: #F9FAF8;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.header .navbar .right-links a {
+  text-decoration: none;
+}
+
+.header > .navbar ul a,
+.header > .info .sub-text {
+  font-size: 18px;
+  font-weight: 400;
+  color: #E5E7EB;
+}
+
+.header > .info {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header > .info > .text {
+  height: 300px;
+  width: 300px;
+  flex: 1 1 0;
+}
+
+.header > .info > .image {
+  height: 300px;
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.20);
+}
+
+.header .sign-up {
+  color: white;
+  background-color: #3882F6;
+  border-radius: 4px 8px;
+  padding: 16px 64px;
+  font-weight: 900;
+}
+
+
+/* Styles for features section */
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.features > .title {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 48px 0px;
+
+}
+
+.features > .cards {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+}
+
+.cards .card {
+  height: 400px;
+}
+
+.cards .card > .card-pic {
+  height: 220px;
+  width: 220px;
+  border-radius: 22px;
+  border: 6px solid #3882F6;
+  margin: 8px 0px;
+}
+
+.cards .card > .card-text {
+  height: 100%;
+  width: 220px;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(80, 80, 80, 1);
+  text-align: center;
 }
